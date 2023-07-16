@@ -1,23 +1,18 @@
 import * as mui from "@mui/material";
-import { useState } from "react";
+import * as subcategory from "./subcategory";
 
 interface Props {
   name: string;
+  subcategories: string[];
 }
 
 export function Card(props: Props) {
-  const [count, setCount] = useState(0);
-
-  return <mui.Card>
-    <mui.CardActionArea onClick={() => setCount(count + 1)}>
+  return (
+    <mui.Card>
       <mui.CardContent>
-        <mui.Stack spacing={2}>
-          <center>
-          {props.name}
-          <h3>{count}</h3>
-          </center>
-        </mui.Stack>
+        <h3>{props.name}</h3>
+        <subcategory.Grid subcategories={props.subcategories} />
       </mui.CardContent>
-    </mui.CardActionArea>
-  </mui.Card>
+    </mui.Card>
+  );
 }
