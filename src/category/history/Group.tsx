@@ -9,10 +9,16 @@ interface Props {
 }
 
 export function Group(props: Props) {
-  const categoryColor: {[category: string]: string} = {};
-  for (const [index, category] of props.categories.entries()) {
-    categoryColor[category] = utils.colorFromIndex(index);
-  }
+  const groupColors = [
+    "Mediamaz",
+    "Interpreter",
+    "M Work",
+    "Bootcamp",
+    "M Legal",
+    "Go Penerjemah",
+    "MT",
+    "Website",
+  ];
 
   const cards = props.categoryHistory
     .slice(0, 5)
@@ -21,8 +27,16 @@ export function Group(props: Props) {
         props.categoryHistory.splice(index, 1);
         props.setCategoryHistory(props.categoryHistory);
       };
+
+      let color = "";
+      for (const [index, groupColor] of groupColors.entries()) {
+        if (category.includes(groupColor)) {
+          color = utils.colorFromIndex(index);
+        }
+      }
+
       return <mui.Grid key={index} item xs={2}>
-        <Card name={category} color={categoryColor[category]} onClick={onClick} />
+        <Card name={category} color={color} onClick={onClick} />
       </mui.Grid>;
     });
 

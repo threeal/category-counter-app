@@ -18,7 +18,7 @@ export function Card(props: Props) {
         <mui.Stack spacing={2}>
           <center>
           {props.category}
-          <h1>{props.count}</h1>
+          <h3>{props.count}</h3>
           </center>
         </mui.Stack>
       </mui.CardContent>
