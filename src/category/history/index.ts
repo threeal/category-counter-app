@@ -1,2 +1,2 @@
-export { DecrementButton } from "./DecrementButton";
+export { Card } from "./Card";
 export { Group } from "./Group";
