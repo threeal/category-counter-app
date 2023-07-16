@@ -15,11 +15,9 @@ export function Group(props: Props) {
   }
 
   const cards = props.categoryHistory
-    .slice(0, 6)
+    .slice(0, 5)
     .map((category, index) => {
       const onClick = () => {
-
-
         props.categoryHistory.splice(index, 1);
         props.setCategoryHistory(props.categoryHistory);
       };
@@ -28,8 +26,20 @@ export function Group(props: Props) {
       </mui.Grid>;
     });
 
+  if (props.categoryHistory.length > 5) {
+    cards.push(
+      <mui.Grid key={6} item xs={2}>
+        <mui.Card>
+          <mui.CardContent>
+            <center>+{props.categoryHistory.length - 5}</center>
+          </mui.CardContent>
+        </mui.Card>
+      </mui.Grid>
+    );
+  }
+
   return <mui.Box m={-2}>
-      <mui.Grid container spacing={2}>
+    <mui.Grid container spacing={2}>
       { cards }
     </mui.Grid>
   </mui.Box>

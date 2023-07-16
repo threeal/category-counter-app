@@ -31,13 +31,13 @@ export function Group() {
   });
 
   return<mui.Stack spacing={2}>
-    <h3>Click to decrease count (remove item)</h3>
-    <history.Group categories={categories} categoryHistory={categoryHistory} setCategoryHistory={setCategoryHistory}/>
     <h3>Click to increase count</h3>
     <mui.Box m={-2}>
       <mui.Grid container spacing={2}>
         {cards}
       </mui.Grid>
     </mui.Box>
+    <h3>Click to decrease count (remove item)</h3>
+    <history.Group categories={categories} categoryHistory={categoryHistory} setCategoryHistory={setCategoryHistory}/>
   </mui.Stack>;
 }
