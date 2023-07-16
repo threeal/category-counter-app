@@ -1,6 +1,6 @@
-# React-TypeScript Starter
+# Category Counter App
 
-[![build status](https://img.shields.io/github/actions/workflow/status/threeal/react-ts-starter/build.yaml?branch=main&style=flat-square)](https://github.com/threeal/react-ts-starter/actions/workflows/build.yaml)
-[![deploy status](https://img.shields.io/github/actions/workflow/status/threeal/react-ts-starter/deploy.yaml?branch=main&label=deploy&style=flat-square)](https://github.com/threeal/react-ts-starter/actions/workflows/deploy.yaml)
+[![build status](https://img.shields.io/github/actions/workflow/status/threeal/category-counter-app/build.yaml?branch=main&style=flat-square)](https://github.com/threeal/category-counter-app/actions/workflows/build.yaml)
+[![deploy status](https://img.shields.io/github/actions/workflow/status/threeal/category-counter-app/deploy.yaml?branch=main&label=deploy&style=flat-square)](https://github.com/threeal/category-counter-app/actions/workflows/deploy.yaml)
 
-Kickstart your [React](https://react.dev/) project with [TypeScript](https://www.typescriptlang.org/) using this minimalistic [GitHub repository template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
+The Category Counter App is a web application designed to help you efficiently count and track items based on their categories. Whether you need to manage inventory, organize collections, or keep track of various items, this app provides a user-friendly interface to streamline the process.
