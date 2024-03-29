@@ -6,4 +6,4 @@ The Category Counter App is a web application designed to help you efficiently c
 
 This project is licensed under the terms of the [MIT License](./LICENSE).
 
-Copyright © 2023 [Alfi Maulana](https://github.com/threeal)
+Copyright © 2023-2024 [Alfi Maulana](https://github.com/threeal)
