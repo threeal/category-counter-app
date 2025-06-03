@@ -1,28 +1,22 @@
-name: build
+name: Build
 on:
   workflow_dispatch:
   pull_request:
   push:
     branches: [main]
 jobs:
-  app:
-    runs-on: ubuntu-latest
+  build-app:
+    name: Build App
+    runs-on: ubuntu-24.04
     steps:
-      - name: Checkout
+      - name: Checkout Project
         uses: actions/checkout@v4.2.2
 
-      - name: Cache deps
-        uses: threeal/cache-action@v0.2.1
-        with:
-          key: node
-          version: ${{ hashFiles('package-lock.json') }}
-          files: node_modules
-
-      - name: Install deps
+      - name: Install Dependencies
         run: npm install
 
-      - name: Check lint
+      - name: Check Lint
         run: npm run lint
 
-      - name: Build app
+      - name: Build App
         run: npm run build
