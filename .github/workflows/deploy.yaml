@@ -1,43 +1,36 @@
-name: deploy
+name: Deploy
 on:
   workflow_dispatch:
   push:
     branches: [main]
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-concurrency:
-  group: pages
-  cancel-in-progress: false
 jobs:
-  app:
-    runs-on: ubuntu-latest
+  deploy-app:
+    name: Deploy App
+    runs-on: ubuntu-24.04
+    permissions:
+      id-token: write
+      pages: write
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deploy-app.outputs.page_url }}
+    concurrency:
+      group: pages
+      cancel-in-progress: true
     steps:
-      - name: Checkout
+      - name: Checkout Project
         uses: actions/checkout@v4.2.2
 
-      - name: Cache deps
-        uses: threeal/cache-action@v0.2.1
-        with:
-          key: node
-          version: ${{ hashFiles('package-lock.json') }}
-          files: node_modules
-
-      - name: Install deps
+      - name: Install Dependencies
         run: npm install
 
-      - name: Build app
+      - name: Build App
         run: npm run build
 
-      - name: Upload artifact
+      - name: Upload App
         uses: actions/upload-pages-artifact@v3.0.1
         with:
           path: dist
 
       - name: Deploy App
-        id: deployment
+        id: deploy-app
         uses: actions/deploy-pages@v4.0.5
