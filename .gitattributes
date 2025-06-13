@@ -1,0 +1,2 @@
+**/*.svg -diff
+pnpm-lock.yaml -diff linguist-generated

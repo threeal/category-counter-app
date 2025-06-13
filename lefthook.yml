@@ -1,0 +1,27 @@
+pre-commit:
+  piped: true
+  jobs:
+    - name: install dependencies
+      run: pnpm install
+      glob:
+        - .npmrc
+        - package.json
+        - pnpm-lock.yaml
+        - pnpm-workspace.yaml
+
+    - name: fix formatting
+      run: pnpm prettier --write --ignore-unknown {staged_files}
+
+    - name: fix lint
+      run: pnpm eslint --no-warn-ignored --fix {staged_files}
+
+    - name: check types
+      run: pnpm tsc --noEmit
+      glob:
+        - "*.{ts,tsx}"
+        - .npmrc
+        - pnpm-lock.yaml
+        - tsconfig.json
+
+    - name: check diff
+      run: git diff --exit-code {staged_files}
