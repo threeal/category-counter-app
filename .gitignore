@@ -1,6 +1,7 @@
 .*
 !.git*
-!.eslint*
+!.npmrc
+!.prettierignore
 
 dist/
 node_modules/
