@@ -8,14 +8,14 @@
     "test": "vitest run"
   },
   "dependencies": {
-    "react": "^19.1.0",
+    "react": "^19.1.1",
     "react-dom": "^19.1.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.32.0",
     "@tsconfig/vite-react": "^7.0.0",
     "@types/node": "^24.0.1",
-    "@types/react": "^19.1.8",
+    "@types/react": "^19.1.12",
     "@types/react-dom": "^19.1.6",
     "@vitejs/plugin-react": "^5.0.0",
     "@vitest/coverage-v8": "^3.2.3",
