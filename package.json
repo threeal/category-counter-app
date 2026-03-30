@@ -24,7 +24,7 @@
     "eslint-plugin-react": "^7.37.5",
     "jiti": "^2.6.1",
     "lefthook": "^2.1.4",
-    "playwright": "^1.57.0",
+    "playwright": "^1.58.2",
     "prettier": "^3.8.1",
     "prettier-plugin-css-order": "^2.2.0",
     "prettier-plugin-organize-imports": "^4.3.0",
