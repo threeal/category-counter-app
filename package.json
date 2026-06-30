@@ -23,7 +23,7 @@
     "eslint": "^9.39.4",
     "eslint-plugin-react": "^7.37.5",
     "jiti": "^2.7.0",
-    "lefthook": "^2.1.6",
+    "lefthook": "^2.1.9",
     "playwright": "^1.60.0",
     "prettier": "^3.8.3",
     "prettier-plugin-css-order": "^2.2.0",
