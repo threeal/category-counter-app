@@ -20,7 +20,7 @@
     "@vitejs/plugin-react": "^5.2.0",
     "@vitest/browser-playwright": "^4.0.15",
     "@vitest/coverage-v8": "^4.0.15",
-    "eslint": "^9.39.4",
+    "eslint": "^10.7.0",
     "eslint-plugin-react": "^7.37.5",
     "jiti": "^2.7.0",
     "lefthook": "^2.1.9",
