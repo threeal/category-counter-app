@@ -18,7 +18,7 @@
     "@types/react": "^19.2.17",
     "@types/react-dom": "^19.1.6",
     "@vitejs/plugin-react": "^5.2.0",
-    "@vitest/browser-playwright": "^4.0.15",
+    "@vitest/browser-playwright": "^4.1.11",
     "@vitest/coverage-v8": "^4.0.15",
     "eslint": "^9.39.4",
     "eslint-plugin-react": "^7.37.5",
