@@ -9,11 +9,11 @@ importers:
   .:
     dependencies:
       react:
-        specifier: ^19.2.3
-        version: 19.2.3
+        specifier: ^19.2.7
+        version: 19.2.7
       react-dom:
-        specifier: ^19.2.3
-        version: 19.2.3(react@19.2.3)
+        specifier: ^19.2.7
+        version: 19.2.7(react@19.2.7)
     devDependencies:
       '@eslint/js':
         specifier: ^9.39.4
@@ -25,11 +25,11 @@ importers:
         specifier: ^26.1.1
         version: 26.1.1
       '@types/react':
-        specifier: ^19.2.7
-        version: 19.2.7
+        specifier: ^19.2.17
+        version: 19.2.17
       '@types/react-dom':
         specifier: ^19.1.6
-        version: 19.1.6(@types/react@19.2.7)
+        version: 19.1.6(@types/react@19.2.17)
       '@vitejs/plugin-react':
         specifier: ^5.2.0
         version: 5.2.0(vite@7.3.5(@types/node@26.1.1)(jiti@2.7.0))
@@ -80,7 +80,7 @@ importers:
         version: 4.1.0(@types/node@26.1.1)(@vitest/browser-playwright@4.0.15)(vite@7.3.5(@types/node@26.1.1)(jiti@2.7.0))
       vitest-browser-react:
         specifier: ^1.0.1
-        version: 1.0.1(@types/react-dom@19.1.6(@types/react@19.2.7))(@types/react@19.2.7)(@vitest/browser@4.0.15(vite@7.3.5(@types/node@26.1.1)(jiti@2.7.0))(vitest@4.1.0))(react-dom@19.2.3(react@19.2.3))(react@19.2.3)(vitest@4.1.0)
+        version: 1.0.1(@types/react-dom@19.1.6(@types/react@19.2.17))(@types/react@19.2.17)(@vitest/browser@4.0.15(vite@7.3.5(@types/node@26.1.1)(jiti@2.7.0))(vitest@4.1.0))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(vitest@4.1.0)
 
 packages:
 
@@ -591,8 +591,8 @@ packages:
     peerDependencies:
       '@types/react': ^19.0.0
 
-  '@types/react@19.2.7':
-    resolution: {integrity: sha512-MWtvHrGZLFttgeEj28VXHxpmwYbor/ATPYbBfSFZEIRK0ecCFLl2Qo55z52Hss+UV9CRN7trSeq1zbgx7YDWWg==}
+  '@types/react@19.2.17':
+    resolution: {integrity: sha512-MXfmqaVPEVgkBT/aY0aGCkRWWtByiYQXo3xdQ8r5RzuFrPiRn8Gar2tQdXSUQ2GKV3bkXckek89V8wQBY2Q/Aw==}
 
   '@typescript-eslint/eslint-plugin@8.62.1':
     resolution: {integrity: sha512-4EQM77WgVNxj7OkL/5b/D/xZsw00G577+UriYTC7JF5opcF3T2AuoeY7ueLaZgSVjSgCS6yOAJB5bRGLPSJUzA==}
@@ -987,6 +987,7 @@ packages:
   eslint@9.39.4:
     resolution: {integrity: sha512-XoMjdBOwe/esVgEvLmNsD3IRHkm7fbKIUGvrleloJXUZgDHig2IPWNniv+GwjyJXzuNqVjlr5+4yVUZjycJwfQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
     peerDependencies:
       jiti: '*'
@@ -1703,10 +1704,10 @@ packages:
     resolution: {integrity: sha512-vYt7UD1U9Wg6138shLtLOvdAu+8DsC/ilFtEVHcH+wydcSpNE20AfSOduf6MkRFahL5FY7X1oU7nKVZFtfq8Fg==}
     engines: {node: '>=6'}
 
-  react-dom@19.2.3:
-    resolution: {integrity: sha512-yELu4WmLPw5Mr/lmeEpox5rw3RETacE++JgHqQzd2dg+YbJuat3jH4ingc+WPZhxaoFzdv9y33G+F7Nl5O0GBg==}
+  react-dom@19.2.7:
+    resolution: {integrity: sha512-t0BRVXvbiE/o20Hfw669rLbMCDWtYZLvmJigy2f0MxsXF+71pxhR3xOkspmsO8h3ZlNzyibAmtCa3l4lYKk6gQ==}
     peerDependencies:
-      react: ^19.2.3
+      react: ^19.2.7
 
   react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
@@ -1715,8 +1716,8 @@ packages:
     resolution: {integrity: sha512-QgT5//D3jfjJb6Gsjxv0Slpj23ip+HtOpnNgnb2S5zU3CB26G/IDPGoy4RJB42wzFE46DRsstbW6tKHoKbhAxw==}
     engines: {node: '>=0.10.0'}
 
-  react@19.2.3:
-    resolution: {integrity: sha512-Ku/hhYbVjOQnXDZFv2+RibmLFGwFdeeKHFcOTlrt7xplBnya5OGn/hIRDsqDiSUcfORsDC7MPxwork8jBwsIWA==}
+  react@19.2.7:
+    resolution: {integrity: sha512-HNe9WslTbXmFK8o8cmwgAeJFSBvt1bPdHCVKtaaV+WlAN36mpT4hcRpwbf3fY56ar2oIXzsBpOAiIRHAdY0OlQ==}
     engines: {node: '>=0.10.0'}
 
   reflect.getprototypeof@1.0.10:
@@ -2472,11 +2473,11 @@ snapshots:
     dependencies:
       undici-types: 8.3.0
 
-  '@types/react-dom@19.1.6(@types/react@19.2.7)':
+  '@types/react-dom@19.1.6(@types/react@19.2.17)':
     dependencies:
-      '@types/react': 19.2.7
+      '@types/react': 19.2.17
 
-  '@types/react@19.2.7':
+  '@types/react@19.2.17':
     dependencies:
       csstype: 3.2.3
 
@@ -3678,16 +3679,16 @@ snapshots:
 
   punycode@2.3.1: {}
 
-  react-dom@19.2.3(react@19.2.3):
+  react-dom@19.2.7(react@19.2.7):
     dependencies:
-      react: 19.2.3
+      react: 19.2.7
       scheduler: 0.27.0
 
   react-is@16.13.1: {}
 
   react-refresh@0.18.0: {}
 
-  react@19.2.3: {}
+  react@19.2.7: {}
 
   reflect.getprototypeof@1.0.10:
     dependencies:
@@ -4003,15 +4004,15 @@ snapshots:
       fsevents: 2.3.3
       jiti: 2.7.0
 
-  vitest-browser-react@1.0.1(@types/react-dom@19.1.6(@types/react@19.2.7))(@types/react@19.2.7)(@vitest/browser@4.0.15(vite@7.3.5(@types/node@26.1.1)(jiti@2.7.0))(vitest@4.1.0))(react-dom@19.2.3(react@19.2.3))(react@19.2.3)(vitest@4.1.0):
+  vitest-browser-react@1.0.1(@types/react-dom@19.1.6(@types/react@19.2.17))(@types/react@19.2.17)(@vitest/browser@4.0.15(vite@7.3.5(@types/node@26.1.1)(jiti@2.7.0))(vitest@4.1.0))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(vitest@4.1.0):
     dependencies:
       '@vitest/browser': 4.0.15(vite@7.3.5(@types/node@26.1.1)(jiti@2.7.0))(vitest@4.1.0)
-      react: 19.2.3
-      react-dom: 19.2.3(react@19.2.3)
+      react: 19.2.7
+      react-dom: 19.2.7(react@19.2.7)
       vitest: 4.1.0(@types/node@26.1.1)(@vitest/browser-playwright@4.0.15)(vite@7.3.5(@types/node@26.1.1)(jiti@2.7.0))
     optionalDependencies:
-      '@types/react': 19.2.7
-      '@types/react-dom': 19.1.6(@types/react@19.2.7)
+      '@types/react': 19.2.17
+      '@types/react-dom': 19.1.6(@types/react@19.2.17)
 
   vitest@4.1.0(@types/node@26.1.1)(@vitest/browser-playwright@4.0.15)(vite@7.3.5(@types/node@26.1.1)(jiti@2.7.0)):
     dependencies:
